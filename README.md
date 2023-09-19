@@ -1,2 +1,2 @@
-# test_permissions
-test permissions
+# TIP_FW manifest
+
