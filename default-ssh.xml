@@ -7,7 +7,7 @@ Licensed under the MIT license.
 <manifest>
 
 
-  <remote fetch="https://github.com/Nuvoton-Israel/npcm8xx-tip" name="tip"/>
+  <remote fetch="https://github.com/Nuvoton-Israel" name="npcm8xx-tip"/>
   <remote fetch="https://github.com/Azure" name="cerberus"/>
   <remote fetch="https://github.com/ARMmbed" name="mbedtls"/>
 
