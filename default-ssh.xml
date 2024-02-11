@@ -10,7 +10,7 @@ Licensed under the MIT license.
   <remote fetch="https://github.com/Azure" name="cerberus"/>
   <remote fetch="https://github.com/ARMmbed" name="mbedtls"/>
 
-  <project remote="cerberus" revision="95b9f2b1e22a378e08bf1cbe6120f14e182a1b00" name="Project-Cerberus" path="cerberus"/>
+  <project remote="cerberus" revision="238c65853449d85b5a5440c7e1fb3390ef7c1459" name="Project-Cerberus" path="cerberus"/>
   <project remote="tip" revision="master" name="npcm8xx-tip" path="cerberus/projects/nuvoton"/>
   <project remote="mbedtls" revision="3f8d78411a26e833db18d9fbde0e2f0baeda87f0" name="mbedtls" path="cerberus/external/mbedtls-2.17.0"/>
 
