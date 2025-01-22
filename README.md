@@ -1,3 +1,9 @@
+
+#  WARNING:   Cerberus core upgrade on Jan 22nd 2025!  IGPS older branches do not compile any more. need to revert the Cerberus core back to this commit:
+#             95b9f2b1e22a378e08bf1cbe6120f14e182a1b00
+
+
+
 Nuvoton Cerberus
 =================
 
