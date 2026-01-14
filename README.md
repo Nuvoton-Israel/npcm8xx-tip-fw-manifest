@@ -33,7 +33,7 @@ Download the source using SSH:
 ```bash
 mkdir NuvotonCerberus
 cd NuvotonCerberus
-~/.local/bin/repo init --config-name tali.perry1@gmail.com -u git@github.com:Nuvoton-Israel/npcm8xx-tip-fw-manifest.git -m default-ssh.xml -b master  --config-name
+~/.local/bin/repo init --config-name YOUR_EMAIL_ADDRESS_FOR_GITHUB -u git@github.com:Nuvoton-Israel/npcm8xx-tip-fw-manifest.git -m default-ssh.xml -b master  --config-name
 ~/.local/bin/repo sync
 
 ```
