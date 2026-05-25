@@ -1,0 +1,17 @@
+# Repo tool directories
+.repo/
+
+# Synced project directories
+NuvotonCerberus/
+cerberus/
+
+# OS and IDE files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp

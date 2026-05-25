@@ -25,17 +25,29 @@ Download the source using HTTP:
 ```bash
 mkdir NuvotonCerberus
 cd NuvotonCerberus
-repo init -u https://github.com/Nuvoton-Israel/npcm8xx-tip-fw-manifest.git -b master
+repo init -u ../ -b master
 repo sync
 ```
 
 Download the source using SSH:
+
+Prerequisites:
+- Your SSH key (`~/.ssh/id_ed25519`) must be added to your GitHub account (https://github.com/settings/ssh/new)
+- `repo` tool installed (see above)
+
 ```bash
 mkdir NuvotonCerberus
 cd NuvotonCerberus
-~/.local/bin/repo init --config-name YOUR_EMAIL_ADDRESS_FOR_GITHUB -u git@github.com:Nuvoton-Israel/npcm8xx-tip-fw-manifest.git -m default-ssh.xml -b master  --config-name
-~/.local/bin/repo sync
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+repo init -u ../ -m default-ssh.xml -b master
+repo sync
+```
 
+To set your git identity for this repo, add `--config-name` to the `repo init` command (it will prompt for name/email).
+If you have the manifest repo cloned locally, you can use the local path instead:
+```bash
+repo init -u /path/to/npcm8xx-tip-fw-manifest -m default-ssh.xml -b master
 ```
 
 ###Repo on Windows

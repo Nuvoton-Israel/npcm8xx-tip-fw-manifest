@@ -6,12 +6,12 @@ Licensed under the MIT license.
 -->
 <manifest>
 
-  <remote fetch="https://github.com/Nuvoton-Israel" name="tip"/>
+  <remote fetch="https://github.com/Nuvoton-Israel" name="npcm8xx-tip"/>
   <remote fetch="https://github.com/Nuvoton-Israel" name="npcm8xx-tip-fw-project-cerberus"/>
   <remote fetch="https://github.com/ARMmbed" name="mbedtls"/>
 
-  <project remote="npcm8xx-tip-fw-project-cerberus" revision="core-igps" name="Project-Cerberus" path="cerberus"/>
-  <project remote="tip" revision="master" name="npcm8xx-tip" path="cerberus/projects/nuvoton"/>
+  <project remote="npcm8xx-tip-fw-project-cerberus" revision="core-igps" name="npcm8xx-tip-fw-project-cerberus" path="cerberus"/>
+  <project remote="npcm8xx-tip" revision="master" name="npcm8xx-tip" path="cerberus/projects/nuvoton"/>
   <project remote="mbedtls" revision="5e146adef63b326b04282252639bebc2730939c6" name="mbedtls" path="cerberus/external/mbedtls"/>
 
 </manifest>
