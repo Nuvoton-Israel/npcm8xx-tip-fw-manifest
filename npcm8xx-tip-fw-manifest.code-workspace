@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "NuvotonCerberus/cerberus"
+		},
+		{
+			"path": "NuvotonCerberus/cerberus/external/mbedtls"
+		},
+		{
+			"path": "NuvotonCerberus/cerberus/projects/nuvoton"
+		}
+	],
+	"settings": {}
+}
