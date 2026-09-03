@@ -1,8 +1,4 @@
 
-#  WARNING:   Cerberus core upgrade on Jan 22nd 2025!  IGPS older branches do not compile any more. need to revert the Cerberus core back to this commit:
-#             95b9f2b1e22a378e08bf1cbe6120f14e182a1b00
-
-
 
 Nuvoton Cerberus
 =================
@@ -58,7 +54,7 @@ Windows.  See the `repo` documentation for details regarding Windows support at 
 If `repo` is still not working there are two other options for using `repo` in Windows.
 
 1. Use Windows Subsystem for Linux (WSL).  This has the benefit of not needing anything special for repo to work, but
-has the downside of not actually being a Windows development enviroment.
+has the downside of not actually being a Windows development environment.
 
 2. There exists an old version of `repo` ported to work in Windows.  Details of this project can be found on github at
 https://github.com/esrlabs/git-repo.  See the README.md in that repo for installation details.
