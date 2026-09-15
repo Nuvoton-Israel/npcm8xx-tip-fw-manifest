@@ -12,7 +12,7 @@ Licensed under the MIT license.
 
   <project remote="npcm8xx-tip-fw-project-cerberus" revision="core-igps" name="npcm8xx-tip-fw-project-cerberus" path="cerberus"/>
   <project remote="npcm8xx-tip" revision="main_nuvoton" name="npcm8xx-tip" path="cerberus/projects/nuvoton">
-    <copyfile src="build_tip_fw.sh" dest="build_tip_fw.sh"/>
+    <copyfile src="quick_build.sh" dest="quick_build.sh"/>
   </project>
   <project remote="mbedtls" revision="5e146adef63b326b04282252639bebc2730939c6" name="mbedtls" path="cerberus/external/mbedtls"/>
 
