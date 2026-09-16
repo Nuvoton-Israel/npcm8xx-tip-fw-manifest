@@ -17,6 +17,14 @@ chmod a+rx ~/bin/repo
 PATH=${PATH}:~/bin
 ```
 
+If `curl` is not available, `wget` can be used instead:
+```bash
+mkdir ~/bin
+wget -O ~/bin/repo https://storage.googleapis.com/git-repo-downloads/repo
+chmod a+rx ~/bin/repo
+PATH=${PATH}:~/bin
+```
+
 Download the source using HTTP:
 ```bash
 mkdir NuvotonCerberus
@@ -28,14 +36,19 @@ repo sync
 Download the source using SSH:
 
 Prerequisites:
-- Your SSH key (`~/.ssh/id_ed25519`) must be added to your GitHub account (https://github.com/settings/ssh/new)
+- An SSH key. If you don't already have one, generate it:
+  ```bash
+  ssh-keygen -t ed25519 -C "your_email@example.com" -f ~/.ssh/id_MY_SSH_KEY
+  ```
+  This creates a private key (`~/.ssh/id_MY_SSH_KEY`) and a public key (`~/.ssh/id_MY_SSH_KEY.pub`).
+- Your SSH key (For example : `~/.ssh/id_MY_SSH_KEY`) must be added to your GitHub account (https://github.com/settings/ssh/new). Copy the contents of the `.pub` file (e.g. `cat ~/.ssh/id_MY_SSH_KEY.pub`) into the "Key" field.
 - `repo` tool installed (see above)
 
 ```bash
 mkdir NuvotonCerberus
 cd NuvotonCerberus
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
+ssh-add ~/.ssh/id_MY_SSH_KEY
 repo init -u ../ -m default-ssh.xml -b master
 repo sync
 ```
