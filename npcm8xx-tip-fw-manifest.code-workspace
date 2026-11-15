@@ -13,5 +13,12 @@
 			"path": "NuvotonCerberus/cerberus/projects/nuvoton"
 		}
 	],
-	"settings": {}
+	"settings": {
+		// projects/nuvoton and external/mbedtls are their own workspace roots;
+		// don't show them again under cerberus.
+		"files.exclude": {
+			"projects/nuvoton": true,
+			"external/mbedtls": true
+		}
+	}
 }
